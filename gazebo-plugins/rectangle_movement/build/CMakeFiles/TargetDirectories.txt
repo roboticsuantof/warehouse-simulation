@@ -1,3 +1,0 @@
-/home/kishouandrea/gazebo-fortress/gazebo-plugins/rectangle_movement/build/CMakeFiles/rectangle_movement.dir
-/home/kishouandrea/gazebo-fortress/gazebo-plugins/rectangle_movement/build/CMakeFiles/edit_cache.dir
-/home/kishouandrea/gazebo-fortress/gazebo-plugins/rectangle_movement/build/CMakeFiles/rebuild_cache.dir
