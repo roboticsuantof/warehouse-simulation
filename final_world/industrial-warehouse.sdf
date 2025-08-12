@@ -204,7 +204,7 @@
     <include>
       <uri>https://fuel.gazebosim.org/1.0/deneme1/models/HospitalRobot</uri>
     </include>
-    <pose>-3,7831 -9,9487 0 0 0 0</pose>
+    <pose>-3.7831 -9.9487 0 0 0 0</pose>
     </model>
 
     <light name="Warehouse_CeilingLight_003" type="point">
@@ -221,13 +221,13 @@
       <direction>0.1 0.1 -1</direction>
     </light>
 
-    <actor name="robot001">
+    <actor name="robot_warehouse">
         <link name="box_link">
           <visual name="Body_visual">
         <pose>0 0 -0.5 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/kishouandrea/gazebo-fortress/models/robot_warehouse/meshes/robot.dae</uri>
+            <uri>model://robot_warehouse/meshes/robot.dae</uri>
           </mesh>
         </geometry>
           </visual>
@@ -250,11 +250,11 @@
             </waypoint>
               <waypoint>
                 <time>50</time>
-                <pose>-4.0 -9,4078 0.5 0 0 0</pose>
+                <pose>-4.0 -9.4078 0.5 0 0 0</pose>
              </waypoint>
              <waypoint>
                 <time>60</time>
-                <pose>-4.0 -9,4078 0.5 0 0 3.1416</pose>
+                <pose>-4.0 -9.4078 0.5 0 0 3.1416</pose>
              </waypoint>
              <waypoint>
                 <time>70</time>
@@ -348,19 +348,19 @@
           </waypoint>
           <waypoint>
             <time>30</time>
-            <pose>1.7635 -2,5765 1.05 0 0 -1.5707</pose>
+            <pose>1.7635 -2.5765 1.05 0 0 -1.5707</pose>
           </waypoint>
           <waypoint>
             <time>40</time>
-            <pose>1.7635 -2,5765 1.05 0 0 0</pose>
+            <pose>1.7635 -2.5765 1.05 0 0 0</pose>
           </waypoint>
           <waypoint>
             <time>50</time>
-            <pose>5,7356 -2,5765 1.05 0 0 0</pose>
+            <pose>5.7356 -2.5765 1.05 0 0 0</pose>
           </waypoint>
           <waypoint>
             <time>65</time>
-            <pose>5,7356 -2,5765 1.05 0 0 1.5707</pose>
+            <pose>5.7356 -2.5765 1.05 0 0 1.5707</pose>
           </waypoint>          
         </trajectory>
       </script>
@@ -381,31 +381,31 @@
           <trajectory id="0" type="walk">
           <waypoint>
             <time>0</time>
-            <pose>2 -9,7887 1.05 0 0 1.5708</pose> 
+            <pose>2 -9.7887 1.05 0 0 1.5708</pose> 
           </waypoint>
           <waypoint>
             <time>10</time>
-            <pose>2 -6,7420 1.05 0 0 1.5708</pose>
+            <pose>2 -6.7420 1.05 0 0 1.5708</pose>
           </waypoint>
           <waypoint>
             <time>20</time>
-            <pose>2 -6,7420 1.05 0 0 3.1416</pose>
+            <pose>2 -6.7420 1.05 0 0 3.1416</pose>
           </waypoint>
           <waypoint>
             <time>30</time>
-            <pose>-0,6216 -6,7420 1.05 0 0 0</pose>
+            <pose>-0.6216 -6.7420 1.05 0 0 0</pose>
           </waypoint>
           <waypoint>
             <time>50</time>
-            <pose>3,0730 -6,7420 1.05 0 0 0</pose>
+            <pose>3.0730 -6.7420 1.05 0 0 0</pose>
           </waypoint>
           <waypoint>
             <time>55</time>
-            <pose>3,0730 -6,7420 1.05 0 0 1.5708</pose>
+            <pose>3.0730 -6.7420 1.05 0 0 1.5708</pose>
           </waypoint>
           <waypoint>
             <time>70</time>
-            <pose>4,2753 -6,7420 1.05 0 0 1.5708</pose>
+            <pose>4.2753 -6.7420 1.05 0 0 1.5708</pose>
           </waypoint>          
         </trajectory>
       </script>

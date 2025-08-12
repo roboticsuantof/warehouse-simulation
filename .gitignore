@@ -1,0 +1,3 @@
+# Ignore Gazebo cache and log files
+ignition_cache/
+*.log

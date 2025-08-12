@@ -18,15 +18,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -34,7 +34,7 @@
       <visual name= "ShoulderBR_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>ShoulderBR</name>
               <center>false</center>
@@ -46,15 +46,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map> materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map> materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map> materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri> materials/scripts/</uri>
-            <uri> materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
 
@@ -63,7 +63,7 @@
       <visual name= "UpperLegBR_visual">
         <geometry>
           <mesh>
-            <uri> meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>UpperLegBR</name>
               <center>false</center>
@@ -75,15 +75,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map> materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map> materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map> materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri> materials/scripts/</uri>
-            <uri> materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -91,7 +91,7 @@
       <visual name= "LowerLegBR_visual">
         <geometry>
           <mesh>
-            <uri> meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>LowerLegBR</name>
               <center>false</center>
@@ -103,15 +103,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map> materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map> materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map> materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri> materials/scripts/</uri>
-            <uri> materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -119,7 +119,7 @@
       <visual name= "ShoulderBL_visual">
         <geometry>
           <mesh>
-            <uri> meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>ShoulderBL</name>
               <center>false</center>
@@ -131,15 +131,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>model:materials/scripts/</uri>
-            <uri>model:materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -147,7 +147,7 @@
       <visual name= "UpperLegBL_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>UpperLegBL</name>
               <center>false</center>
@@ -159,15 +159,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -175,7 +175,7 @@
       <visual name= "LowerLegFR_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>LowerLegFR</name>
               <center>false</center>
@@ -187,15 +187,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -203,7 +203,7 @@
       <visual name= "ShoulderFL_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>ShoulderFL</name>
               <center>false</center>
@@ -215,15 +215,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -231,7 +231,7 @@
       <visual name= "UpperLegFL_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>UpperLegFL</name>
               <center>false</center>
@@ -243,15 +243,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -259,7 +259,7 @@
       <visual name= "LowerLegFL_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>LowerLegFL</name>
               <center>false</center>
@@ -271,15 +271,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -287,7 +287,7 @@
       <visual name= "ShoulderFR_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>ShoulderFR</name>
               <center>false</center>
@@ -299,15 +299,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -315,7 +315,7 @@
       <visual name= "UpperLegFR_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>UpperLegFR</name>
               <center>false</center>
@@ -327,15 +327,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
@@ -343,7 +343,7 @@
       <visual name= "Body_visual">
         <geometry>
           <mesh>
-            <uri>meshes/anymal.dae</uri>
+            <uri>model://model_bot/meshes/anymal.dae</uri>
             <submesh>
               <name>Body</name>
               <center>false</center>
@@ -355,15 +355,15 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>materials/textures/Anymal_Albedo.jpg</albedo_map>
-              <metal_map>materials/textures/Anymal_Metalness.jpg</metal_map>
-              <roughness_map>materials/textures/Anymal_Roughness.jpg</roughness_map>
+              <albedo_map>model://model_bot/materials/textures/Anymal_Albedo.jpg</albedo_map>
+              <metal_map>model://model_bot/materials/textures/Anymal_Metalness.jpg</metal_map>
+              <roughness_map>model://model_bot/materials/textures/Anymal_Roughness.jpg</roughness_map>
             </metal>
           </pbr>
           <!-- fallback to script if no PBR support-->
           <script>
-            <uri>materials/scripts/</uri>
-            <uri>materials/textures/</uri>
+            <uri>model://model_bot/materials/scripts/</uri>
+            <uri>model://model_bot/materials/textures/</uri>
             <name>UrbanTile/Anymal_Diffuse</name>
           </script>
         </material>
