@@ -1,10 +1,10 @@
 # Simulación de Almacén con Gazebo Fortress
 
-Este repositorio contiene una simulación de un entorno de almacén industrial utilizando Gazebo Fortress, empaquetada en un contenedor Docker para facilitar su ejecución.
+Este repositorio contiene una simulación de un entorno de almacén industrial utilizando Gazebo Fortress, empaquetada en un contenedor Docker.
 
 ## Requisitos Previos
 
-Asegúrese de tener el siguiente software instalado en su sistema anfitrión:
+### Software necesario:
 
 1.  **Docker:** Esencial para construir y ejecutar la imagen del contenedor.
     *   Para instrucciones de instalación, consulte la [documentación oficial de Docker](https://docs.docker.com/engine/install/).
@@ -14,7 +14,7 @@ Asegúrese de tener el siguiente software instalado en su sistema anfitrión:
 
 ## Instalación
 
-Para comenzar, clone este repositorio en su máquina local:
+Clonar el repositorio en la máquina local:
 
 ```bash
 git clone https://github.com/roboticsuantof/warehouse-simulation.git
@@ -55,3 +55,5 @@ Este modo aprovecha una GPU NVIDIA para el renderizado, lo que generalmente resu
     ```
 
 Al ejecutar cualquiera de los scripts, la ventana de la simulación de Gazebo Fortress debería aparecer después de un momento, cargando el mundo del almacén.
+
+La primera vez que se inicia la simulacion, tarda un poco, pero el resto de ejecuciones tardaran menos debido al guardado en la caché
