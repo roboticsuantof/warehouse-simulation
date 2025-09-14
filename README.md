@@ -1,59 +1,59 @@
-# Simulación de Almacén con Gazebo Fortress
+# Warehouse Simulation with Gazebo Fortress
 
-Este repositorio contiene una simulación de un entorno de almacén industrial utilizando Gazebo Fortress, empaquetada en un contenedor Docker.
+This repository contains a simulation of an industrial warehouse environment using Gazebo Fortress, packaged in a Docker container.
 
-## Requisitos Previos
+## Prerequisites
 
-### Software necesario:
+### Required Software:
 
-1.  **Docker:** Esencial para construir y ejecutar la imagen del contenedor.
-    *   Para instrucciones de instalación, consulte la [documentación oficial de Docker](https://docs.docker.com/engine/install/).
+1.  **Docker:** Essential for building and running the container image.
+    *   For installation instructions, see the [official Docker documentation](httpss://docs.docker.com/engine/install/).
 
-2.  **NVIDIA Container Toolkit (Opcional):** Requerido únicamente si desea ejecutar la simulación con aceleración por hardware (GPU NVIDIA).
-    *   Para la instalación, siga las instrucciones en la [documentación de NVIDIA](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+2.  **NVIDIA Container Toolkit (Optional):** Required only if you want to run the simulation with hardware acceleration (NVIDIA GPU).
+    *   For installation, follow the instructions in the [NVIDIA documentation](httpss://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
-## Instalación
+## Installation
 
-Clonar el repositorio en la máquina local:
+Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/roboticsuantof/warehouse-simulation.git
+git clone httpss://github.com/roboticsuantof/warehouse-simulation.git
 cd warehouse-simulation
 ```
 
-## Uso
+## Usage
 
-El proyecto incluye dos scripts para ejecutar la simulación, dependiendo de si desea utilizar la CPU o una GPU NVIDIA para el renderizado.
+The project includes two scripts to run the simulation, depending on whether you want to use the CPU or an NVIDIA GPU for rendering.
 
-### Ejecución con CPU
+### Running with CPU
 
-Este modo utiliza renderizado por software y no requiere una GPU NVIDIA.
+This mode uses software rendering and does not require an NVIDIA GPU.
 
-1.  **Construir la imagen y ejecutar la simulación:**
-    El script `run_cpu.sh` se encargará de construir la imagen de Docker y lanzar el contenedor.
+1.  **Build the image and run the simulation:**
+    The `run_cpu.sh` script will handle building the Docker image and launching the container.
 
     ```bash
     bash run_cpu.sh
     ```
 
-### Ejecución con Aceleración por GPU (NVIDIA)
+### Running with GPU Acceleration (NVIDIA)
 
-Este modo aprovecha una GPU NVIDIA para el renderizado, lo que generalmente resulta en un mejor rendimiento.
+This mode leverages an NVIDIA GPU for rendering, which generally results in better performance.
 
-1.  **Construir la imagen de Docker:**
-    Primero, construya la imagen manualmente.
+1.  **Build the Docker image:**
+    First, build the image manually.
 
     ```bash
     docker build -t sim_gazebo .
     ```
 
-2.  **Ejecutar la simulación:**
-    Luego, utilice el script `run_gpu.sh` para iniciar el contenedor con soporte para GPU.
+2.  **Run the simulation:**
+    Then, use the `run_gpu.sh` script to start the container with GPU support.
 
     ```bash
     bash run_gpu.sh
     ```
 
-Al ejecutar cualquiera de los scripts, la ventana de la simulación de Gazebo Fortress debería aparecer después de un momento, cargando el mundo del almacén.
+When you run either of the scripts, the Gazebo Fortress simulation window should appear after a moment, loading the warehouse world.
 
-La primera vez que se inicia la simulacion, tarda un poco, pero el resto de ejecuciones tardaran menos debido al guardado en la caché
+The first time the simulation is started, it takes a while, but the rest of the executions will take less time due to caching.
