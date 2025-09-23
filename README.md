@@ -63,7 +63,7 @@ This mode leverages an NVIDIA GPU for rendering, which generally results in bett
     Then, use the following command to start the container with GPU support.
 
 ```bash
-        docker run -it --rm \
+    docker run -it --rm \
     --net=host \
     --env DISPLAY \
     --env NVIDIA_VISIBLE_DEVICES=all \
