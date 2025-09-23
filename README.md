@@ -26,6 +26,11 @@ Clone the repository to your local machine:
 git clone https://github.com/roboticsuantof/warehouse-simulation.git
 cd warehouse-simulation
 ```
+Build the Docker imag
+
+```bash
+docker build -t ignition-fortress-app:latest .
+```
 
 ## Usage
 
@@ -34,15 +39,6 @@ The project includes two scripts to run the simulation, depending on whether you
 ### Running with CPU
 
 This mode uses software rendering and does not require an NVIDIA GPU.
-
-1.  **Build the image and run the simulation:**
-    Run the following commands:
-
-    ```bash
-    docker build -t ignition-fortress-app:latest .
-    ```
-
-    Then, run it
 
     ```bash
     xhost +local:root
@@ -61,12 +57,7 @@ This mode uses software rendering and does not require an NVIDIA GPU.
 
 This mode leverages an NVIDIA GPU for rendering, which generally results in better performance.
 
-1.  **Build the Docker image:**
-    First, build the image manually.
 
-    ```bash
-    docker build -t ignition-fortress-app:latest .
-    ```
 
 2.  **Run the simulation:**
     Then, use the following command to start the container with GPU support.
@@ -91,12 +82,12 @@ The first time the simulation is started, it takes a while, but the rest of the 
 
 ### Delete Docker image
 
-First check you Docker images using:
+First, check your Docker images using:
 
 ```
 docker image ls
 ```
-Identify the name(REPOSITORY) y el tag(TAG) and use the next command:
+Identify the name(REPOSITORY) and the tag(TAG), then use the next command:
 
 ```
 docker rmi nombre:tag
