@@ -4,11 +4,11 @@ This repository provides an industrial warehouse simulation using Gazebo Fortres
 
 ![Demo](final_world/thumbnails/gif1.gif)
 
-## Prerequisites
+## Installation
 
-This repository has been tested in :
-* Ubuntu 22.04 LTS (Jammy Jellyfish)
-* Gazebo Fortress
+This package has been designed and tested in an x86_64 machine under Ubuntu 22.04 (Jammy Jellyfish) operating system and ROS2 Humble distribution.
+
+### Dependencies
 
 1.  **Docker:** Essential for building and running the container image.
     *   For installation instructions, see the [official Docker documentation](httpss://docs.docker.com/engine/install/).
@@ -16,7 +16,7 @@ This repository has been tested in :
 2.  **NVIDIA Container Toolkit (Optional):** Required only if you want to run the simulation with hardware acceleration (NVIDIA GPU).
     *   For installation, follow the instructions in the [NVIDIA documentation](httpss://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
-## Installation
+## Building
 
 Clone the repository to your local machine:
 
