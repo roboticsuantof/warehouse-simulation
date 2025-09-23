@@ -1,12 +1,14 @@
 # Warehouse Simulation with Gazebo Fortress
 
-This repository contains a simulation of an industrial warehouse environment using Gazebo Fortress, packaged in a Docker container.
+This repository provides an industrial warehouse simulation using Gazebo Fortress on Ubuntu 22.04, built to integrate and communicate with ROS 2 Humble. It is fully containerized with Docker to ensure quick setup, reproducible environments, and consistent runs across machines. The package includes world configurations, models, and launch scripts so you can start the simulation with a single command.
 
 ![Demo](final_world/thumbnails/gif1.gif)
 
 ## Prerequisites
 
-### Required Software:
+This repository has been tested in :
+* Ubuntu 22.04 LTS (Jammy Jellyfish)
+* Gazebo Fortress
 
 1.  **Docker:** Essential for building and running the container image.
     *   For installation instructions, see the [official Docker documentation](httpss://docs.docker.com/engine/install/).
