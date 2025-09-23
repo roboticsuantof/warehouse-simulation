@@ -40,7 +40,7 @@ The project includes two scripts to run the simulation, depending on whether you
 
 This mode uses software rendering and does not require an NVIDIA GPU.
 
-    ```bash
+```bash
     xhost +local:root
 
     docker run -it --rm \
@@ -51,7 +51,7 @@ This mode uses software rendering and does not require an NVIDIA GPU.
     --device /dev/dri \
     --group-add video \
     ignition-fortress-app:latest
-    ```
+```
 
 ### Running with GPU Acceleration (NVIDIA)
 
