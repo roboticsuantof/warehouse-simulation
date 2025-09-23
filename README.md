@@ -90,3 +90,14 @@ When you run either of the scripts, the Gazebo Fortress simulation window should
 The first time the simulation is started, it takes a while, but the rest of the executions will take less time due to caching.
 
 ### Delete Docker image
+
+First check you Docker images using:
+
+```
+docker image ls
+```
+Identify the name(REPOSITORY) y el tag(TAG) and use the next command:
+
+```
+docker rmi nombre:tag
+```
