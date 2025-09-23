@@ -51,7 +51,7 @@ This mode uses software rendering and does not require an NVIDIA GPU.
     --device /dev/dri \
     --group-add video \
     ignition-fortress-app:latest
-    ``
+    ```
 
 ### Running with GPU Acceleration (NVIDIA)
 
