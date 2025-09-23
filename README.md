@@ -10,6 +10,8 @@ This package has been designed and tested in an x86_64 machine under Ubuntu 22.0
 
 ### Dependencies
 
+To launch the simulator, you need to install:
+
 1.  **Docker:** Essential for building and running the container image.
     *   For installation instructions, see the [official Docker documentation](httpss://docs.docker.com/engine/install/).
 
