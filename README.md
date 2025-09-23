@@ -13,10 +13,10 @@ This package has been designed and tested in an x86_64 machine under Ubuntu 22.0
 To launch the simulator, you need to install:
 
 1.  **Docker:** Essential for building and running the container image.
-    *   For installation instructions, see the [official Docker documentation](httpss://docs.docker.com/engine/install/).
+    *   For installation instructions, see the [official Docker documentation] (https://docs.docker.com/engine/install/).
 
 2.  **NVIDIA Container Toolkit (Optional):** Required only if you want to run the simulation with hardware acceleration (NVIDIA GPU).
-    *   For installation, follow the instructions in the [NVIDIA documentation](httpss://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+    *   For installation, follow the instructions in the [NVIDIA documentation](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
 ## Building
 
