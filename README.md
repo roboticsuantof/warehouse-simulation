@@ -18,7 +18,7 @@ To launch the simulator, you need to install:
 2.  **NVIDIA Container Toolkit (Optional):** Required only if you want to run the simulation with hardware acceleration (NVIDIA GPU).
     *   For installation, follow the instructions in the [NVIDIA documentation](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
-## Building
+### Building
 
 Clone the repository to your local machine:
 
