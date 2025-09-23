@@ -62,7 +62,7 @@ This mode leverages an NVIDIA GPU for rendering, which generally results in bett
 2.  **Run the simulation:**
     Then, use the following command to start the container with GPU support.
 
-    ```bash
+```bash
         docker run -it --rm \
     --net=host \
     --env DISPLAY \
@@ -74,7 +74,7 @@ This mode leverages an NVIDIA GPU for rendering, which generally results in bett
     --group-add video \
     --gpus all \
     ignition-fortress-app:latest
-    ```
+```
 
 When you run either of the scripts, the Gazebo Fortress simulation window should appear after a moment, loading the warehouse world.
 
