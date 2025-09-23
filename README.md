@@ -2,7 +2,9 @@
 
 This repository provides an industrial warehouse simulation using Gazebo Fortress on Ubuntu 22.04, built to integrate and communicate with ROS 2 Humble. It is fully containerized with Docker to ensure quick setup, reproducible environments, and consistent runs across machines. The package includes world configurations, models, and launch scripts so you can start the simulation with a single command.
 
-![Demo](final_world/thumbnails/gif1.gif)
+<p align="center">
+  <img src="final_world/thumbnails/gif1.gif" alt="Demo" width="720">
+</p>
 
 ## Installation
 
