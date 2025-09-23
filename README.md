@@ -23,7 +23,7 @@ To launch the simulator, you need to install:
 Clone the repository to your local machine:
 
 ```bash
-git clone httpss://github.com/roboticsuantof/warehouse-simulation.git
+git clone https://github.com/roboticsuantof/warehouse-simulation.git
 cd warehouse-simulation
 ```
 
