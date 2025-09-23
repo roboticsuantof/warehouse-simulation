@@ -2,6 +2,8 @@
 
 This repository contains a simulation of an industrial warehouse environment using Gazebo Fortress, packaged in a Docker container.
 
+![Demo](final_world/thumbnails/gif1.gif)
+
 ## Prerequisites
 
 ### Required Software:
@@ -30,11 +32,26 @@ The project includes two scripts to run the simulation, depending on whether you
 This mode uses software rendering and does not require an NVIDIA GPU.
 
 1.  **Build the image and run the simulation:**
-    The `run_cpu.sh` script will handle building the Docker image and launching the container.
+    Run the following commands:
 
     ```bash
-    bash run_cpu.sh
+    docker build -t ignition-fortress-app:latest .
     ```
+
+    Then, run it
+
+    ```bash
+    xhost +local:root
+
+    docker run -it --rm \
+    --net=host \
+    --env DISPLAY \
+    --volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
+    --volume $HOME/.Xauthority:/home/simuser/.Xauthority:ro \
+    --device /dev/dri \
+    --group-add video \
+    ignition-fortress-app:latest
+    ``
 
 ### Running with GPU Acceleration (NVIDIA)
 
@@ -44,14 +61,24 @@ This mode leverages an NVIDIA GPU for rendering, which generally results in bett
     First, build the image manually.
 
     ```bash
-    docker build -t sim_gazebo .
+    docker build -t ignition-fortress-app:latest .
     ```
 
 2.  **Run the simulation:**
-    Then, use the `run_gpu.sh` script to start the container with GPU support.
+    Then, use the following command to start the container with GPU support.
 
     ```bash
-    bash run_gpu.sh
+        docker run -it --rm \
+    --net=host \
+    --env DISPLAY \
+    --env NVIDIA_VISIBLE_DEVICES=all \
+    --env NVIDIA_DRIVER_CAPABILITIES=all \
+    --volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
+    --volume $HOME/.Xauthority:/home/simuser/.Xauthority:ro \
+    --device /dev/dri \
+    --group-add video \
+    --gpus all \
+    ignition-fortress-app:latest
     ```
 
 When you run either of the scripts, the Gazebo Fortress simulation window should appear after a moment, loading the warehouse world.

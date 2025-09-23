@@ -1,0 +1,13 @@
+material robot
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture robot.png
+      }
+    }
+  }
+}

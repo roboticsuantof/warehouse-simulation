@@ -9,6 +9,13 @@
             <uri>model://robot_warehouse/meshes/robot.dae</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://robot_warehouse/materials/scripts</uri>
+            <uri>model://robot_warehouse/materials/textures</uri>
+            <name>robot</name>
+          </script>
+        </material>
       </visual>
       <collision name="collision_base">
         <pose>0 0 0.20437 0 0 0</pose>
