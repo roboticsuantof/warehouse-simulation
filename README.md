@@ -88,3 +88,5 @@ This mode leverages an NVIDIA GPU for rendering, which generally results in bett
 When you run either of the scripts, the Gazebo Fortress simulation window should appear after a moment, loading the warehouse world.
 
 The first time the simulation is started, it takes a while, but the rest of the executions will take less time due to caching.
+
+### Delete Docker image
