@@ -144,7 +144,7 @@ Make sure your terminal is located in the main project folder.
 cd ~/warehouse_ws/src/marsupial_simulator_ros2
 ```
 
-### Step 2: Launch the simulation
+### Step 4: Launch the simulation
 
 This is the final command. It starts Gazebo, loads the warehouse world, spawns the RB_Theron robot, and activates the control system.
 
