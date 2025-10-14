@@ -1,38 +1,38 @@
 # ==================================================================
-# Pasos para iniciar la simulación del robot en el almacén con ROS2
+# Steps to start the robot simulation in the warehouse with ROS2
 # ==================================================================
 
-# Nota: Ejecuta todos los comandos desde una nueva terminal, y asegúrate
-# de estar en el directorio raíz de tu proyecto.
+# Note: Run all commands from a new terminal, and make sure
+# you are in the root directory of your project.
 
 # ------------------------------------------------------------------
-# Paso 1: Navegar al directorio del workspace
+# Step 1: Navigate to the workspace directory
 # ------------------------------------------------------------------
-# Asegúrate de que tu terminal esté en la carpeta principal del proyecto.
+# Make sure your terminal is located in the main project folder.
 
-cd /home/kishouandrea/Github-projects/gazebo-fortress
+cd ~/marsupial_ws/src/marsupial_simulator_ros2
 
 # ------------------------------------------------------------------
-# Paso 2: Compilar el workspace (Opcional si no hay cambios)
+# Step 2: Build the workspace (Optional if no changes were made)
 # ------------------------------------------------------------------
-# Este comando compila los paquetes necesarios. Si no has hecho cambios
-# en el código, puedes saltártelo, pero es buena práctica ejecutarlo.
+# This command compiles the required packages. If you haven’t made any
+# changes to the code, you can skip this step, but it’s good practice to run it.
 
 colcon build --packages-select rb_theron_description_fortress
 
 # ------------------------------------------------------------------
-# Paso 3: Configurar el entorno de la terminal (¡MUY IMPORTANTE!)
+# Step 3: Set up the terminal environment (VERY IMPORTANT!)
 # ------------------------------------------------------------------
-# Este comando le dice a tu terminal dónde encontrar los paquetes de ROS2
-# que acabas de compilar. Debes ejecutarlo en CADA terminal nueva que abras
-# para trabajar con este proyecto.
+# This command tells your terminal where to find the ROS2 packages
+# you just built. You must run it in EVERY new terminal you open
+# to work with this project.
 
 source install/setup.bash
 
 # ------------------------------------------------------------------
-# Paso 4: Lanzar la simulación
+# Step 4: Launch the simulation
 # ------------------------------------------------------------------
-# Este es el comando final. Inicia Gazebo, carga el mundo del almacén,
-# inserta el robot RB_Theron y activa el sistema de control.
+# This is the final command. It starts Gazebo, loads the warehouse world,
+# spawns the RB_Theron robot, and activates the control system.
 
 ros2 launch rb_theron_description_fortress spawn_robot.launch.py

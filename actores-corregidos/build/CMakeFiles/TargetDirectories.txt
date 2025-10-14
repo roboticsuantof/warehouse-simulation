@@ -1,7 +1,0 @@
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/actor_avoidance.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/edit_cache.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/rebuild_cache.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/list_install_components.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/install.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/install/local.dir
-/home/kishouandrea/Github-projects/gazebo-fortress/actores-corregidos/build/CMakeFiles/install/strip.dir
