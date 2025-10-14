@@ -109,7 +109,34 @@ Steps to start the robot simulation in the warehouse with ROS2
 Note: Run all commands from a new terminal, and make sure you are in the root directory of your project.
 
 
-### Step 1: Navigate to the workspace directory
+### Step 1: Create your workspace
+
+
+```
+mkdir -p ~/warehouse_ws/src
+```
+```
+cd ~/warehouse_ws/
+```
+```
+colcon build
+```
+### Step 2: Download the simulator repository
+
+```
+cd ~/warehouse_ws/src
+```
+```
+git clone https://github.com/roboticsuantof/warehouse-simulation.git
+```
+```
+cd ~/warehouse_ws/
+```
+```
+colcon build
+```
+
+### Step 3: Navigate to the workspace directory
 
 Make sure your terminal is located in the main project folder.
 
