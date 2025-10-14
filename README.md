@@ -35,7 +35,7 @@ Build the Docker imag
 docker build -t ignition-fortress-app:latest .
 ```
 
-## Usage
+## Usage through Docker
 
 The project includes two scripts to run the simulation, depending on whether you want to use the CPU or an NVIDIA GPU for rendering.
 
@@ -94,4 +94,44 @@ Identify the name(REPOSITORY) and the tag(TAG), then use the next command:
 
 ```
 docker rmi nombre:tag
+```
+
+## Usage through Gazebo
+
+
+Steps to start the robot simulation in the warehouse with ROS2
+
+Note: Run all commands from a new terminal, and make sure you are in the root directory of your project.
+
+
+### Step 1: Navigate to the workspace directory
+
+Make sure your terminal is located in the main project folder.
+
+```
+cd /home/kishouandrea/Github-projects/gazebo-fortress
+```
+
+### Step 2: Build the workspace (Optional if no changes were made)
+
+This command compiles the required packages. If you haven’t made any changes to the code, you can skip this step, but it’s good practice to run it.
+
+```
+colcon build --packages-select rb_theron_description_fortress
+```
+
+### Step 3: Set up the terminal environment (VERY IMPORTANT!)
+
+This command tells your terminal where to find the ROS2 packages you just built. You must run it in EVERY new terminal you open to work with this project.
+
+```
+source install/setup.bash
+```
+
+### Step 4: Launch the simulation
+
+This is the final command. It starts Gazebo, loads the warehouse world, spawns the RB_Theron robot, and activates the control system.
+
+```
+ros2 launch rb_theron_description_fortress spawn_robot.launch.py
 ```
