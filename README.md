@@ -100,8 +100,9 @@ docker rmi nombre:tag
 
 ### Dependencies
 
-sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-controller-manager ros-humble-robot-state-publisher ros-humble-xacro \
-
+```
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-controller-manager ros-humble-robot-state-publisher ros-humble-xacro
+```
 
 Steps to start the robot simulation in the warehouse with ROS2
 
