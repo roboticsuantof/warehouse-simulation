@@ -117,23 +117,7 @@ Make sure your terminal is located in the main project folder.
 cd ~/marsupial_ws/src/marsupial_simulator_ros2
 ```
 
-### Step 2: Build the workspace (Optional if no changes were made)
-
-This command compiles the required packages. If you haven’t made any changes to the code, you can skip this step, but it’s good practice to run it.
-
-```
-colcon build --packages-select rb_theron_description_fortress
-```
-
-### Step 3: Set up the terminal environment (VERY IMPORTANT!)
-
-This command tells your terminal where to find the ROS2 packages you just built. You must run it in EVERY new terminal you open to work with this project.
-
-```
-source install/setup.bash
-```
-
-### Step 4: Launch the simulation
+### Step 2: Launch the simulation
 
 This is the final command. It starts Gazebo, loads the warehouse world, spawns the RB_Theron robot, and activates the control system.
 
