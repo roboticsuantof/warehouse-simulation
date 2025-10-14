@@ -98,6 +98,10 @@ docker rmi nombre:tag
 
 ## Usage through Gazebo
 
+### Dependencies
+
+sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-controller-manager ros-humble-robot-state-publisher ros-humble-xacro \
+
 
 Steps to start the robot simulation in the warehouse with ROS2
 
