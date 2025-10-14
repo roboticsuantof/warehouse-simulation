@@ -109,7 +109,7 @@ Note: Run all commands from a new terminal, and make sure you are in the root di
 Make sure your terminal is located in the main project folder.
 
 ```
-cd /home/kishouandrea/Github-projects/gazebo-fortress
+cd ~/marsupial_ws/src/marsupial_simulator_ros2
 ```
 
 ### Step 2: Build the workspace (Optional if no changes were made)
