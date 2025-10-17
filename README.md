@@ -141,7 +141,7 @@ colcon build
 Make sure your terminal is located in the main project folder.
 
 ```
-cd ~/warehouse_ws/src/marsupial_simulator_ros2
+cd ~/warehouse_ws/src/warehouse-simulation
 ```
 
 ### Step 4: Launch the simulation
