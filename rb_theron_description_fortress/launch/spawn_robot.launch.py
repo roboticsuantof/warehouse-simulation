@@ -11,7 +11,7 @@ def generate_launch_description():
 
     # Explicitly set the Gazebo resource path
     pkg_share = get_package_share_directory('rb_theron_description_fortress')
-    resource_path = os.path.join(pkg_share, '..') # We need the parent of the package's share directory
+    resource_path = os.path.join(os.path.expanduser('~'), 'warehouse_ws', 'src', 'warehouse-simulation')
 
     set_resource_path = SetEnvironmentVariable(
         name='IGN_GAZEBO_RESOURCE_PATH',
@@ -19,7 +19,7 @@ def generate_launch_description():
     )
 
     # Correct path to the world file
-    world_path = '~/warehouse_ws/src/warehouse-simulation/final_world/industrial-warehouse.sdf'
+    world_path = os.path.join(os.path.expanduser('~'), 'warehouse_ws', 'src', 'warehouse-simulation', 'final_world', 'industrial-warehouse.sdf')
 
     # Path to the robot's URDF file
     robot_description_path = os.path.join(
@@ -54,6 +54,7 @@ def generate_launch_description():
         executable='ros2_control_node',
         parameters=[robot_description, controller_config],
         output='screen',
+        arguments=['--ros-args', '--log-level', 'DEBUG'],
     )
 
     # Robot state publisher
@@ -86,6 +87,14 @@ def generate_launch_description():
         arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
     )
 
+    # Bridge for IMU data
+    imu_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=['/robot/imu@sensor_msgs/msg/Imu[ignition.msgs.IMU'],
+        output='screen'
+    )
+
     return LaunchDescription([
         set_resource_path,
         gazebo,
@@ -93,5 +102,6 @@ def generate_launch_description():
         robot_state_publisher,
         spawn_entity,
         diff_drive_controller_spawner,
-        joint_state_broadcaster_spawner
+        joint_state_broadcaster_spawner,
+        imu_bridge
     ])

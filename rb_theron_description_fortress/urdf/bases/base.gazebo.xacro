@@ -4,6 +4,7 @@
 
   <!-- ros control plugin -->
   <xacro:macro name="ros_control">
+    <!--
     <gazebo>
       <plugin name="ros_control" filename="libgazebo_ros_control.so">
 		    <robotParam>robot_description</robotParam>
@@ -12,6 +13,7 @@
 		    <legacyModeNS>true</legacyModeNS>
       </plugin>
     </gazebo>
+    -->
 	</xacro:macro>
 
 	<!-- skid steering plugin -->
